@@ -33,3 +33,8 @@ if __name__ == "__main__":
     my_module.hello("Beck")
     product, sum = my_module.product_sum(10, 20)
     print(product, sum)
+
+    print(3, 4, sep = ",", end = "")
+    print(5, 6)
+    my_module.hello(name = "Francis")
+    my_module.hello()
