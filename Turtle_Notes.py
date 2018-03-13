@@ -124,10 +124,15 @@ def recursive_h(x, y, size, depth):
         my_turtle.goto(x, y)
         my_turtle.down()
         my_turtle.goto(x + size, y)
+        my_turtle.goto(x - size, y)
         my_turtle.goto(x + size, y + size / 2)
         my_turtle.goto(x + size, y - size / 2)
+        my_turtle.goto(x - size, y + size / 2)
+        my_turtle.goto(x - size, y - size / 2)
         recursive_h(x + size, y + size / 2, size / 2,  depth - 1)
         recursive_h(x + size, y - size / 2, size / 2, depth - 1)
+
+recursive_h(-300, 0, 200, 7)
 
 
 my_screen.exitonclick() # end of program
