@@ -7,6 +7,7 @@ my_turtle.speed(0)
 
 my_screen = turtle.Screen()
 my_screen.bgcolor('white')
+my_turtle.width(3)
 
 '''
 # draw a shape using goto
