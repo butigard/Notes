@@ -132,7 +132,7 @@ def recursive_h(x, y, size, depth):
         recursive_h(x + size, y + size / 2, size / 2,  depth - 1)
         recursive_h(x + size, y - size / 2, size / 2, depth - 1)
 
-recursive_h(-300, 0, 200, 7)
+recursive_h(0, 0, 200, 7)
 
 
 my_screen.exitonclick() # end of program
