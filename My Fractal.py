@@ -26,7 +26,7 @@ def recursive_frac(x, y, size, depth, angle):
         recursive_frac(x, y, size / 1.003, depth - 1, angle)
 
 
-recursive_frac(0, 0, 300, 3000, 1)
+recursive_frac(0, 0, 300, 900, 1)
 
 
 my_screen.exitonclick() # end of program
