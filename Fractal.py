@@ -6,13 +6,14 @@ my_turtle.showturtle()
 my_turtle.shape("turtle")
 my_turtle.speed(0)
 my_screen = turtle.Screen()
-my_screen.bgcolor('white')
-my_turtle.width(3)
+my_screen.bgcolor('black')
+my_turtle.width(1)
+my_turtle.pencolor("white")
 
 #------------------------
 
 def recursive_snowflake(x, y, size, depth):
-    m = 3
+    m = 3.5
     if depth > 0:
         my_turtle.up()
         my_turtle.goto(x, y)
@@ -33,7 +34,7 @@ def recursive_snowflake(x, y, size, depth):
         recursive_snowflake(x + math.cos(math.radians(120)) * size, y + math.sin(math.radians(120)) * size, size / m,  depth - 1)
         recursive_snowflake(x + math.cos(math.radians(120)) * size * -1, y + math.sin(math.radians(120)) * size * -1, size / m,  depth - 1)
 
-recursive_snowflake(0, 0, 150, 4)
+recursive_snowflake(0, 0, 200, 4)
 
 
 my_screen.exitonclick() # end of program
