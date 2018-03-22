@@ -7,7 +7,7 @@ my_turtle.speed(0)
 
 my_screen = turtle.Screen()
 my_screen.bgcolor('white')
-my_turtle.width(3)
+my_turtle.width(1)
 
 '''
 # draw a shape using goto
@@ -140,7 +140,7 @@ def recursive_h(x, y, size, depth):
         recursive_h(x - size, y + size, size / 2, depth - 1)
         recursive_h(x - size, y - size, size / 2, depth - 1)
 
-recursive_h(0, 0, 150, 4)
+recursive_h(0, 0, 150, 7)
 
 
 my_screen.exitonclick() # end of program
