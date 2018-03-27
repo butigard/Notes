@@ -20,7 +20,7 @@ country_names = []
 countries_to_plot = ["United States", "France", "Colombia", "Mexico", "Honduras", "South Africa", "Brazil", "Canada", "Germany", "England and Whales", "Ireland", "Sweden", "Switzerland", "Norway", "Denmark", "Netherlands", "Spain", "Japan", "South Korea", "Australia", "Russia", "China", "Israel"]
 
 for i in range(len(data)):
-    if data[i][0] in countries_to_plot:
+    #if data[i][0] in countries_to_plot:
         try:
             homicide = float(data[i][5])
             firearm = float(data[i][7])
@@ -31,7 +31,7 @@ for i in range(len(data)):
             print(data[i][0], "has no data")
 
 plt.figure(1, figsize=(12, 7))
-plt.scatter(firearms_per100, homicides_per100k, s=4, c='red')
+plt.scatter(firearms_per100, homicides_per100k, s=10, c='red')
 plt.title("World Homicide Rates vs Firearm Ownership")
 plt.xlabel("Firearms per 100 People")
 plt.ylabel("Homicides by Firearm per 100k population")
@@ -45,7 +45,8 @@ y = [m * point + b for point in x]
 plt.plot(x, y, color="green")
 
 
-for i in range(len(country_names)):
-    plt.annotate(country_names[i], xy=(firearms_per100[i], homicides_per100k[i])) # text, xy=()
+#for i in range(len(country_names)):
+#    plt.annotate(country_names[i], xy=(firearms_per100[i], homicides_per100k[i])) # text, xy=()
 
 plt.show()
+print(len(country_names))
